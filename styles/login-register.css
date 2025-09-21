@@ -1,6 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
 body>img {
     position: fixed;
     z-index: -1;
+
     filter: brightness(60%) blur(5px);
 }
 
@@ -8,4 +15,9 @@ body>img {
     width: 50%;
     background-color: black;
     z-index: 10;
+}
+
+.main {
+    padding-top: 100px;
+    width: 100%;
 }
