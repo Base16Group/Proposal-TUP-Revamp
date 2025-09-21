@@ -1,0 +1,148 @@
+@import url('./themes.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* color: var(--text-color); */
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all 0.2s linear;
+}
+
+nav {
+    top: 0;
+    right: 0;
+    background-color: var(--nav-color);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 15px 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    z-index: 10;
+}
+
+.nav-logo {
+    width: 50px;
+}
+
+.nav-logo-holder {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+input[type="button"] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: none;
+    border: 1px solid grey;
+    background-color: var(--color-green);
+}
+
+.profile {
+    background-color: var(--pre-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    border: 2px solid #444;
+    font-size: 14px;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    padding-top: 50px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+main>* {
+    width: 100%;
+}
+
+#projects-panel {
+    background-color: var(--top-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    border: 2px solid #444;
+    font-size: 14px;
+    margin: 0;
+}
+
+.tabs {
+    display: flex;
+    gap: 5px;
+}
+
+.tabs>* {
+    background-color: var(--top-bg);
+    width: min-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    user-select: none;
+
+    cursor: pointer;
+}
+
+.active {
+    border-left: 2px solid #444;
+    border-top: 2px solid #444;
+    border-right: 2px solid #444;
+}
+
+.tabs> :not(.active) {
+    color: rgb(173, 173, 173);
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border-color: #3e3e42;
+
+    gap: 20px
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: rgb(162, 162, 162)
+}

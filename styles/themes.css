@@ -1,0 +1,41 @@
+:root {
+    /* Light */
+
+    --bg-color: #f9f9f9;
+    --text-color: #303030;
+    --nav-color: #C51834;
+    --input-bg-text: #545454;
+    --button-color: #58d258;
+
+    --pre-bg: #ddd;
+    --tabs-bg: #ddd;
+    --tabs-inactive-bg: #a1a1a1;
+    --top-bg: #ddd;
+    --projects-bg: #ddd;
+
+    --string: #e84f12;
+    --number: #3b9c07;
+    --boolean: #569cd6;
+    --null: #569cd6;
+    --key: #0069a1;
+}
+
+[data-theme="dark"] {
+    --bg-color: #303030;
+    --text-color: #f9f9f9;
+    --nav-color: #C51834;
+    --input-bg-text: #3e3e3e;
+    --button-color: #5da65d;
+
+    --pre-bg: #1e1e1e;
+    --tabs-bg: #1e1e1e;
+    --tabs-inactive-bg: #5c5c5c;
+    --top-bg: #1e1e1e;
+    --projects-bg: #1e1e1e;
+
+    --string: #ce9178;
+    --number: #b5cea8;
+    --boolean: #569cd6;
+    --null: #008cff;
+    --key: #00a6ff;
+}
