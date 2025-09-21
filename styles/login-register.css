@@ -1,0 +1,11 @@
+body>img {
+    position: fixed;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+.gradient {
+    background: #9b2a2a;
+    background: linear-gradient(0deg, rgba(155, 42, 42, 1) 0%, rgba(237, 221, 83, 0) 100%);
+    position: fixed;
+}
