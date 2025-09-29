@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log(toggleSwitch);
     } else {
-        console.warn("Toggle switch not found in the DOM");
+        // DISABLED BY THE TIME BEING
+        // console.warn("Toggle switch not found in the DOM");
     }
 });
