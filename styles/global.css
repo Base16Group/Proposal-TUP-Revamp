@@ -74,6 +74,8 @@ main {
 
     padding-left: 30px;
     padding-right: 30px;
+
+    gap: 25px;
 }
 
 main>* {

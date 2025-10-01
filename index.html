@@ -45,13 +45,13 @@
     <nav class="navbar">
         <a class="nav-logo-holder" href="#">
             <img class="nav-logo" src="./assets/LOGO.png" alt="TUP Logo">
-            Technological University of the Philippines
+            TUP Manila
         </a>
 
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About TUP</a></li>
-            <li><a href="#">EQSD</a></li>
+            <li><a href="#">More Info</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -59,7 +59,7 @@
                 <sl-icon style="font-size: 18px;" name="moon"></sl-icon>
             </sl-button>
 
-            <sl-button variant="default">
+            <sl-button variant="default" href="./pages/login-register.html">
                 <sl-icon slot="prefix" style="font-size: 23px;" name="person-circle"></sl-icon>
                 Login / Register
             </sl-button>
@@ -81,83 +81,74 @@
             </div>
 
             <!-- <sl-button onclick="alert('hey')">Click</sl-button> -->
-
-            <div>
-                <h1>Quick Links</h1>
-                <div class="ql-links-grid">
-                    <a href="#" class="ql-links-item">
-                        <p>Test</p>
-                    </a>
-                    <a href="#" class="ql-links-item">
-                        <p>Test</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="news">
-                <div
-                    style="color: white; border-radius: 5px; background-color: #C51834; padding: 5px 10px; display: flex; align-items: center; width: 100%; box-sizing: border-box; justify-content: space-between;">
-                    <h1 style="margin: 0;">News</h1>
-                    <sl-button>Read More</sl-button>
-                </div>
-
-                <div class="news-container">
-                    <div class="news-card">
-                        <p class="news-card-title">Test News Card</p>
-                        <hr>
-                        <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
-                            dolor quis diam convallis, in fermentum ex feugiat. Sed feugiat ligula et lorem efficitur
-                            sagittis vel id purus. Morbi in pharetra mauris. Curabitur vel scelerisque massa, blandit
-                            fringilla ligula. Ut id felis pretium nulla vulputate dignissim at et augue. Sed a dui nibh.
-                            Curabitur imperdiet aliquet nibh id aliquam. Praesent vel mi quis ante rhoncus accumsan sed
-                            in erat. Integer pulvinar molestie sapien sit amet tempor. Sed non sem nec sapien tincidunt
-                            aliquet. Mauris tincidunt sit amet leo ullamcorper hendrerit. Nam convallis est eu
-                            ullamcorper dignissim. Aliquam erat volutpat. </p>
-
-                    </div>
-                    <div class="news-card">
-                        <p class="news-card-title">Test News Card</p>
-                        <hr>
-                        <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
-                            dolor quis diam convallis, in fermentum ex feugiat. Sed feugiat ligula et lorem efficitur
-                            sagittis vel id purus. Morbi in pharetra mauris. Curabitur vel scelerisque massa, blandit
-                            fringilla ligula. Ut id felis pretium nulla vulputate dignissim at et augue. Sed a dui nibh.
-                            Curabitur imperdiet aliquet nibh id aliquam. Praesent vel mi quis ante rhoncus accumsan sed
-                            in erat. Integer pulvinar molestie sapien sit amet tempor. Sed non sem nec sapien tincidunt
-                            aliquet. Mauris tincidunt sit amet leo ullamcorper hendrerit. Nam convallis est eu
-                            ullamcorper dignissim. Aliquam erat volutpat. </p>
-
-                    </div>
-                    <div class="news-card">
-                        <p class="news-card-title">Test News Card</p>
-                        <hr>
-                        <p class="news-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
-                            dolor quis diam convallis, in fermentum ex feugiat. Sed feugiat ligula et lorem efficitur
-                            sagittis vel id purus. Morbi in pharetra mauris. Curabitur vel scelerisque massa, blandit
-                            fringilla ligula. Ut id felis pretium nulla vulputate dignissim at et augue. Sed a dui nibh.
-                            Curabitur imperdiet aliquet nibh id aliquam. Praesent vel mi quis ante rhoncus accumsan sed
-                            in erat. Integer pulvinar molestie sapien sit amet tempor. Sed non sem nec sapien tincidunt
-                            aliquet. Mauris tincidunt sit amet leo ullamcorper hendrerit. Nam convallis est eu
-                            ullamcorper dignissim. Aliquam erat volutpat. </p>
-
-                    </div>
+        </div>
 
 
-                </div>
+        <div>
+            <h1>Quick Links</h1>
+            <div class="ql-links-grid">
 
-                <sl-button style="width: 100%;" size="medium">Read More</sl-button>
             </div>
         </div>
 
+
+        <div class="news">
+            <div
+                style="color: white; border-radius: 5px; background-color: #C51834; padding: 5px 10px; display: flex; align-items: center; width: 100%; box-sizing: border-box; justify-content: space-between;">
+                <h1 style="margin: 0;">News</h1>
+                <sl-button>Read More</sl-button>
+            </div>
+
+            <div class="news-container">
+                <a href="#" class="news-card">
+                    <div class="news_top_holder">
+                        <p class="news-title">Test</p>
+                        <p class="badge-date">Oct 1, 2025</p>
+                    </div>
+
+                    <hr>
+                    <p class="card-desc">This is a example of a descrition thing on the card yeah wahts up.</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news_top_holder">
+                        <p class="news-title">Test</p>
+                        <p class="badge-date">Oct 1, 2025</p>
+                    </div>
+                    <hr>
+                    <p class="card-desc">This is a example of a descrition thing on the card yeah wahts up.</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news_top_holder">
+                        <p class="news-title">Test</p>
+                        <p class="badge-date">Oct 1, 2025</p>
+                    </div>
+                    <hr>
+                    <p class="card-desc">This is a example of a descrition thing on the card yeah wahts up.</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news_top_holder">
+                        <p class="news-title">Test</p>
+                        <p class="badge-date">Oct 1, 2025</p>
+                    </div>
+                    <hr>
+                    <p class="card-desc">This is a example of a descrition thing on the card yeah wahts up.</p>
+                </a>
+            </div>
+
+            <!-- <sl-button style="width: 100%;" size="medium">Read More</sl-button> -->
+        </div>
+
         <div class="campus-cards">
-            <img style="width: 100%;" src="./assets/bgimg.jpeg"></img>
+            <!-- <img style="width: 100%;" src="./assets/bgimg.jpeg"></img> -->
+            <i>TODO: Campus Cards</i>
         </div>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 Terence Montecillo | <a href="mailto:V0nbiU8w@proton.me">Contact</a> | <a
-                href="https://github.com/Grizzey" target="_blank">GitHub</a></p>
+        <p>&copy; 2025 0x Base16 Group | <a href="https://github.com/Base16Group" target="_blank">GitHub</a></p>
+
+        <p>Kulang pa</p>
     </footer>
 
 </body>

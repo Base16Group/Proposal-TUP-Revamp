@@ -1,41 +1,32 @@
 :root {
     /* Light */
-
     --bg-color: #f9f9f9;
     --text-color: #303030;
     --nav-color: #C51834;
-    --input-bg-text: #545454;
-    --button-color: #58d258;
 
-    --pre-bg: #ddd;
-    --tabs-bg: #ddd;
-    --tabs-inactive-bg: #a1a1a1;
-    --top-bg: #ddd;
-    --projects-bg: #ddd;
+    
+    /* COLORS */
+    --color-primary: #C51834;
+    --color-primary-light: #E24A63;
+    --color-primary-dark: #990F26;
 
-    --string: #e84f12;
-    --number: #3b9c07;
-    --boolean: #569cd6;
-    --null: #569cd6;
-    --key: #0069a1;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --color-gray-light: #F5F5F5;
+    --color-gray-dark: #1A1A1A;
+
+    /* Theme Colors (Default: Light Theme) */
+    --bg-color: var(--color-white);
+    --text-color: var(--color-black);
+    --card-bg: var(--color-gray-light);
+    --card-text: var(--color-black);
+    --button-bg: var(--color-primary);
+    --button-text: var(--color-white);
+    --button-hover: var(--color-primary-dark);
+
 }
 
 [data-theme="dark"] {
-    --bg-color: #303030;
-    --text-color: #f9f9f9;
-    --nav-color: #C51834;
-    --input-bg-text: #3e3e3e;
-    --button-color: #5da65d;
-
-    --pre-bg: #1e1e1e;
-    --tabs-bg: #1e1e1e;
-    --tabs-inactive-bg: #5c5c5c;
-    --top-bg: #1e1e1e;
-    --projects-bg: #1e1e1e;
-
-    --string: #ce9178;
-    --number: #b5cea8;
-    --boolean: #569cd6;
-    --null: #008cff;
-    --key: #00a6ff;
+    /* TODO */
 }
