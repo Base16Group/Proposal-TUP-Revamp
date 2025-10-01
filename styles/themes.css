@@ -4,7 +4,6 @@
     --text-color: #303030;
     --nav-color: #C51834;
 
-    
     /* COLORS */
     --color-primary: #C51834;
     --color-primary-light: #E24A63;
@@ -24,7 +23,6 @@
     --button-bg: var(--color-primary);
     --button-text: var(--color-white);
     --button-hover: var(--color-primary-dark);
-
 }
 
 [data-theme="dark"] {

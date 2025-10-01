@@ -1,3 +1,5 @@
+@import url("../styles/themes.css");
+
 :root {
     /*EMPTY*/
 }
@@ -59,11 +61,35 @@
     }
 }
 
+.quick-links-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    gap: 20px;
+}
+
+.quick-links-container > * {
+    background-color: var(--button-bg);
+    border: 3px solid red;
+    color: var(--color-primary);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    width: auto;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    cursor: pointer; /* make it clear it's clickable */
+}
+
+.quick-links-container > *:hover {
+    transform: scale(1.02);
+
+}
+
 .hero {
     height: max-content;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 20px;
 }
 
 .carousel {
@@ -111,12 +137,12 @@
 .news-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: 150px;
+    grid-template-rows: repeat(3, 150px);
     gap: 20px;
     padding: 10px;
 }
 
-.news-card{
+.news-card {
     background-color: var(--card-bg);
     width: 100%;
     padding: 10px;
@@ -124,7 +150,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--color-primary);
     transition: transform 0.3s ease;
     will-change: transform;
 }
@@ -136,7 +162,7 @@
 .news_top_holder {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .badge-date {
