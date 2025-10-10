@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav and logo */
+a {
+    width: 100%;
+}
+
+.nav-side {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    justify-content: center;
+    /* Center align the buttons */
+}
+
+#logo-home {
+    width: 350px;
+    margin: auto;
+}
+
+#home-text {
+    font-size: 90px;
+}
+
+#home-quote {
+    font-size: 20px;
+}
+
+/* Main container */
+.container {
+    display: grid;
+    grid-template-columns: 2.4fr 2fr;
+    /* Left column takes 2.4 parts, right column takes 2 parts */
+    grid-template-rows: auto;
+    /* Auto height based on content */
+    gap: 10px;
+    /* Optional gap between items */
+    padding: 90px;
+    /* Adds padding around the grid */
+    height: 100vh;
+    align-items: center;
+    /* Center content vertically */
+}
+
+.left {
+    grid-column: 1;
+    /* Left side occupies the first column */
+}
+
+.right {
+    grid-column: 2;
+    /* Right side occupies the second column */
+    display: grid;
+    /* Make the right box a grid container for centering */
+    place-items: center;
+    /* Center the content inside the right box */
+}
+
+/* Courses Section */
+.courses-intro {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.courses-intro>* {
+    text-align: center;
+}
+
+.courses-container {
+    display: grid;
+    /* Default single column */
+    gap: 50px;
+    /* Space between items */
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--color-primary);
+    width: 95%;
+    height: 200px;
+    display: grid;
+    /* Single column */
+    gap: 10px;
+    /* Space between items */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Alternate the alignment of the cards */
+.card:nth-child(odd) {
+    justify-self: start;
+    /* Left-aligned for odd-numbered cards */
+}
+
+.card:nth-child(even) {
+    justify-self: end;
+    /* Right-aligned for even-numbered cards */
+}
+
+/* Media Queries */
+
+/* For small screens (like mobile phones) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        /* Stack left and right sections */
+        padding: 20px;
+        /* Reduce padding for mobile */
+    }
+
+    #home-text {
+        font-size: 50px;
+        /* Make the text smaller */
+        text-align: center;
+        /* Center the heading */
+    }
+
+    #home-quote {
+        font-size: 18px;
+        /* Adjust the quote font size */
+        text-align: center;
+        /* Center the quote */
+    }
+
+    #logo-home {
+        width: 250px;
+        /* Resize logo */
+        margin: 0;
+        /* Remove margin */
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr;
+        /* Make course cards take full width */
+    }
+
+    .card {
+        width: 100%;
+        /* Ensure cards take full width of the container */
+        margin-bottom: 10px;
+        /* Add some space between cards */
+    }
+
+    .nav-side {
+        flex-direction: column;
+        /* Stack buttons vertically on mobile */
+        gap: 10px;
+    }
+
+    .nav-side a {
+        width: 100%;
+        /* Make buttons take full width */
+        text-align: center;
+        /* Center the text */
+    }
+}
+
+/* For medium screens (like tablets) */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        /* Stack columns on medium-sized devices */
+        padding: 40px;
+        /* Adjust padding for medium screens */
+    }
+
+    #home-text {
+        font-size: 70px;
+        /* Adjust text size */
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr 1fr;
+        /* Display cards in 2 columns */
+    }
+
+    .card {
+        width: 90%;
+        /* Make the cards take up 90% width */
+        margin: 10px auto;
+        /* Center the cards */
+    }
+}

@@ -1,0 +1,74 @@
+@import url("./theme.css");
+
+html,
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background: #9E0A1F;
+    background: linear-gradient(0deg, rgb(97, 4, 18) 0%, rgba(197, 24, 52, 1) 100%);
+    height: 100vh;
+}
+
+.bg {
+    background-image: url("../assets/bg.png");
+    position: fixed;
+    z-index: -1;
+    filter: brightness(20%);
+}
+
+nav {
+    top: 0;
+    left: 0;
+    display: grid;
+    padding: 20px;
+    box-sizing: content-box;
+    height: fit-content;
+    grid-template-columns: 1fr auto;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+footer {
+    bottom: 0;
+    background-color: var(--color-gray-dark);
+    height: 200px;
+}
+
+.button {
+    background-color: none;
+    border-radius: 100px;
+    padding: 1rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 135px;
+}
+
+.filled {
+    background-color: white;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.unfilled {
+    background-color: none;
+    border: 2px solid white;
+    color: white;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    color:black;
+}
