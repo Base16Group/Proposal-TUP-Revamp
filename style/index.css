@@ -56,6 +56,10 @@ a {
 }
 
 /* Courses Section */
+.courses {
+    /* background-color: white; */
+}
+
 .courses-intro {
     height: 150px;
     display: flex;
@@ -78,15 +82,17 @@ a {
 }
 
 .card {
-    background-color: var(--color-primary);
+    background-color: var(--color-gray-dark);
     width: 95%;
     height: 200px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     /* Single column */
     gap: 10px;
     /* Space between items */
     padding: 20px;
     border-radius: 10px;
+
 }
 
 /* Alternate the alignment of the cards */
@@ -98,6 +104,15 @@ a {
 .card:nth-child(even) {
     justify-self: end;
     /* Right-aligned for even-numbered cards */
+}
+
+#title {
+    font-size: 22px;
+}
+
+#desc {
+    font-size: 18px;
+    color: grey;
 }
 
 /* Media Queries */
