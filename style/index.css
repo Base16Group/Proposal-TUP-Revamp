@@ -1,22 +1,18 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Nav and logo */
-a {
-    width: 100%;
-}
-
 .nav-side {
     width: 100%;
     display: flex;
     align-content: center;
     gap: 20px;
     justify-content: center;
-    /* Center align the buttons */
+}
+
+.nav-theme-button {
+    background-color: none;
+    border-radius: 100px;
+    padding: .5rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid white;
 }
 
 #logo-home {
@@ -26,21 +22,31 @@ a {
 }
 
 #home-text {
-    font-size: 90px;
+    font-size: 80px;
+    display: inline-block;
+
+    user-select: none;
+}
+
+#home-text::first-letter {
+    color: var(--color-primary);
+    font-weight: bold;
 }
 
 #home-quote {
     font-size: 20px;
 }
 
-/* Main container */
+#hero {
+    height: 100vh;
+}
+
 .container {
     display: grid;
     grid-template-columns: 2.4fr 2fr;
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 130px;
     padding: 90px;
-    height: 100vh;
     /* align-items: center; */
 }
 
@@ -55,9 +61,13 @@ a {
     /* place-items: center */
 }
 
-/* Courses Section */
-.courses {
-    /* background-color: white; */
+
+.initials p {
+    font-size: 3rem;
+    margin: 0;
+    white-space: nowrap;
+    display: block;
+    line-height: 1.5;
 }
 
 .courses-intro {
@@ -75,49 +85,38 @@ a {
 
 .courses-container {
     display: grid;
-    /* Default single column */
-    gap: 50px;
-    /* Space between items */
     padding: 20px;
+    gap: 20px;
 }
 
 .card {
     background-color: var(--color-gray-dark);
-    width: 95%;
     height: 200px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px auto auto;
     flex-direction: column;
-    /* Single column */
-    gap: 10px;
-    /* Space between items */
     padding: 20px;
-    border-radius: 10px;
-
+    width: 100%;
 }
 
-/* Alternate the alignment of the cards */
 .card:nth-child(odd) {
     justify-self: start;
-    /* Left-aligned for odd-numbered cards */
 }
 
 .card:nth-child(even) {
     justify-self: end;
-    /* Right-aligned for even-numbered cards */
 }
 
 #title {
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #desc {
-    font-size: 18px;
+    font-size: 20px;
     color: grey;
+    padding-top: 20px;
 }
 
-/* Media Queries */
-
-/* For small screens (like mobile phones) */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
