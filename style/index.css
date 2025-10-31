@@ -97,14 +97,7 @@
     flex-direction: column;
     padding: 20px;
     width: 100%;
-}
-
-.card:nth-child(odd) {
-    justify-self: start;
-}
-
-.card:nth-child(even) {
-    justify-self: end;
+    border-radius: 10px;
 }
 
 .title {
