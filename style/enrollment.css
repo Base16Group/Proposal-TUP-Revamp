@@ -1,0 +1,15 @@
+@import url('./theme.css');
+
+body {
+    background-image: linear-gradient(to right bottom, #ff6262, #d64a48, #af3330, #881b1a, #640000);
+}
+
+* {
+    color: black
+}
+
+.admission_container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+}
