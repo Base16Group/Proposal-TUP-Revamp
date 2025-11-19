@@ -1,6 +1,5 @@
 @import url('../theme.css');
 
-/* Forms */
 fieldset {
     background-color: white;
     border: 2px solid var(--color-gray-light);
@@ -8,7 +7,7 @@ fieldset {
     width: fit-content;
     height: fit-content;
     padding: 50px;
-    filter: drop-shadow(0px 0px 5px);
+    /* filter: drop-shadow(0px 0px 5px); */
 }
 
 legend {
@@ -18,17 +17,65 @@ legend {
     transform: translate(-2rem, 0rem);
 }
 
+input {
+    accent-color: blue;
+    color: black;
+}
+
 input[type="text"] {
     border: none;
     outline: none;
     border-bottom: 2px solid grey;
     padding: 10px;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
+}
+
+input[type="email"] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
+}
+
+input[type="tel"] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
+}
+
+label {
+    color: black;
+}
+
+select {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
+}
+
+input[type="password"] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
 }
 
 input[type="date"] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
     padding: 10px;
-    border-radius: 5px;
-    border: 2px solid black;
-    font-size: 16px;
-    font-family: "League Spartan", sans-serif;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
 }

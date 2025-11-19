@@ -24,7 +24,7 @@
 #home-text {
     font-size: 80px;
     display: inline-block;
-
+    color: white;
     user-select: none;
 }
 

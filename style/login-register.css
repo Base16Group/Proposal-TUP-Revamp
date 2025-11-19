@@ -1,3 +1,5 @@
+@import url("./theme.css");
+
 body>img {
     width: 10px;
     height: 10px;
@@ -8,20 +10,29 @@ body>img {
     height: 100vh;
 }
 
+#go-back {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 .left-panel {
     flex: 1;
-    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%),
-    url('../assets/bgimg2.jpg') no-repeat center center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%),
+        url('../assets/bgimg2.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 }
 
 #tup {
-    background-color: #a3152e;
+    background-color: var(--color-primary);
+    padding: 0 4px;
 }
 
 .left-panel h2 {
@@ -53,18 +64,17 @@ body>img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 }
 
 .right-panel h2 {
     font-size: 28px;
-    color: #c61a39;
-    margin-bottom: 10px;
+    color: var(--color-primary);
 }
 
 .welcome-text {
     font-size: 14px;
     color: #555;
-    margin-bottom: 30px;
 }
 
 .box {
@@ -84,6 +94,7 @@ body>img {
     padding-inline: 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 #password {
@@ -95,15 +106,15 @@ body>img {
     top: 50%;
     left: 8px;
     transform: translateY(-50%);
-    background-color: white;
+    background-color: none;
     color: #aaa;
     padding-inline: 6px;
     transition: all 0.3s ease;
     pointer-events: none;
 }
 
-.input-field:focus ~ .floating-label,
-.input-field:not(:placeholder-shown) ~ .floating-label {
+.input-field:focus~.floating-label,
+.input-field:not(:placeholder-shown)~.floating-label {
     top: 0;
     font-size: 12px;
     color: black;
@@ -115,37 +126,66 @@ body>img {
     outline: none;
 }
 
-.mail-icon, .eye-icon {
+.mail-icon,
+.eye-icon {
     position: absolute;
     right: 15px;
     display: flex;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .remember {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 input[type="checkbox"] {
-    transform: translate(-15px, 0px);
+    accent-color: var(--color-primary);
+    cursor: pointer;
 }
 
 .remember>label {
-    transform: translate(-25px, 0px);
+    color: grey;
+}
+
+.button-holder {
+    display: flex;
+    gap: 20px;
+}
+
+.button-holder>a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.register-btn {
+    background-color: none;
+    border: 2px solid var(--color-gray-light);
+    color: var(--color-primary-dark)
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background-color: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .login-btn {
-    width: 100%;
-    background-color: #c61a39;
     color: white;
-    padding: 12px;
+    background-color: var(--color-primary);
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.4s ease;
+}
+
+.login-btn:hover {
+    background-color: var(--color-primary-dark);
 }
 
 .options {
@@ -155,7 +195,7 @@ input[type="checkbox"] {
 }
 
 .options a {
-    color: #c61a39;
+    color: var(--color-primary);
     text-decoration: none;
 }
 
@@ -163,7 +203,35 @@ input[type="checkbox"] {
     text-decoration: underline;
 }
 
-.login-btn:hover {
-    background-color: #a3152e;
-    transition: 0.4s ease;
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        height: 40vh;
+        padding: 40px;
+        text-align: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .right-panel {
+        height: 60vh;
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left-panel h1 {
+        font-size: 28px;
+    }
+
+    .right-panel h2 {
+        font-size: 22px;
+    }
+
+    .input-field {
+        height: 44px;
+    }
 }
