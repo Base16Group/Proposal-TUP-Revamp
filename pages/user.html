@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="TUP Revamp - 0x Group">
+    <meta name="description" content="School Application Form">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="language" content="English">
+    <meta name="author" content="0x Group">
+    <title>TUP | User</title>
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/components_style/inputs.css" />
+    <link rel="stylesheet" href="../style/themes.css" />
+    <link rel="stylesheet" href="../style/user.css" />
+    <script src="./scripts/jQuery/jquerty.min.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js'></script>
+
+</head>
+
+<body>
+
+    <div class="top banner red">
+        <p>Announcement: We have moved our ERS printable on the top!</p>
+    </div>
+
+    <div class="container row">
+        <div>
+            <p class="label">Printable Form</p>
+            <p style="color: grey;">The new printable version is here!</p>
+        </div>
+
+        <input type="button" value="Print" />
+    </div>
+
+    <main class="application-container">
+
+        <div class="user-info">
+            <img id="pfp" src="https://api.dicebear.com/9.x/open-peeps/svg" alt="User Profile Picture">
+
+            <div style="display: flex; flex-direction: column; gap: 10px; justify-content: center; font-size: 26px;">
+                <p>Dela Cruz, Juan</p>
+                <p>Status: <strong>Processing</strong></p>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="container calendar-view">
+        <div id='calendar'></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                height: '100%',
+                contentHeight: 'auto',
+                aspectRatio: 1.35
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+
+</html>
