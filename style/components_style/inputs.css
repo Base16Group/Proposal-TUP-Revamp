@@ -40,21 +40,6 @@ input[type="email"] {
     /* background-color: rgb(194, 194, 194); */
 }
 
-input[type="button"] {
-    border: none;
-    border-radius: 5px;
-    background-color: var(--color-primary);
-    padding: 10px 25px;
-    cursor: pointer;
-    transition: transform .2s ease, background-color .2s ease, color .2s ease;
-    color: white;
-}
-
-input[type="button"]:hover {
-    transform: scale(1.08);
-    background-color: var(--color-primary-dark);
-}
-
 input[type="number"] {
     border: none;
     outline: none;
