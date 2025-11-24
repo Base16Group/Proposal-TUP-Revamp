@@ -42,7 +42,8 @@
             </a>
 
             <h2>Application Form</h2>
-            <p class="welcome-text">We're excited to have you with us! Please complete the form below to get started. If you need assistance, don’t hesitate to contact us. Let’s get you enrolled!</p>
+            <p class="welcome-text">We're excited to have you with us! Please complete the form below to get started. If
+                you need assistance, don’t hesitate to contact us. Let’s get you enrolled!</p>
             <form class="box" action="./application-2.html">
                 <div class="input-group">
                     <input type="text" id="name" class="input-field" placeholder="" required>
@@ -56,15 +57,20 @@
                     <input type="text" id="middlename" class="input-field" placeholder="">
                     <label for="middlename" class="floating-label">Middle Name</label>
                 </div>
+                <div class="input-group">
+                    <input type="number" id="contact" class="input-field" placeholder="">
+                    <label for="contact" class="floating-label">Contact Number</label>
+                </div>
                 <div class="input-group" style="flex-direction: column;">
                     <p style="color: black">Birthdate</p>
                     <input type="date" id="bd" class="input-field" placeholder="Birthdate" value="none" required>
                 </div>
 
+
                 <div class="button-holder">
                     <button type="submit" class="btn filled login-btn">PROCEEED</button>
                 </div>
-                
+
                 <div class="options">
                     <a href="#" class="forgot">Forgot your password?</a>
                 </div>
@@ -77,6 +83,12 @@
             <img class="footer-group-icon" src="../assets/0xw.png" alt="0x"> Designed by - 0x Group
         </p>
     </div>
+
+    <script>
+        document.getElementById('contact').addEventListener('input', function () {
+            this.value = this.value.replace(/\D/g, ''); // onli leturs
+        });
+    </script>
 </body>
 
 

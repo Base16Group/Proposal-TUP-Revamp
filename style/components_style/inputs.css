@@ -40,6 +40,15 @@ input[type="email"] {
     /* background-color: rgb(194, 194, 194); */
 }
 
+input[type="number"] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    color: black;
+    /* background-color: rgb(194, 194, 194); */
+}
+
 input[type="tel"] {
     border: none;
     outline: none;
