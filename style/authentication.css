@@ -1,5 +1,11 @@
 @import url("./theme.css");
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 body>img {
     width: 10px;
     height: 10px;
@@ -97,10 +103,6 @@ body>img {
     transition: all 0.3s ease;
 }
 
-#password {
-    padding-right: 40px;
-}
-
 .floating-label {
     position: absolute;
     top: 50%;
@@ -176,6 +178,12 @@ input[type="checkbox"] {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+}
+
+.unfilled {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
 }
 
 .login-btn {
