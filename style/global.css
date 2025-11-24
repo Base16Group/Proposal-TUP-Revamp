@@ -125,7 +125,7 @@ a {
 
 /* Banners */
 .banner {
-    width: 100%;
+    width: 100vw;
     height: 30px;
     background-color: white;
     color: black;
